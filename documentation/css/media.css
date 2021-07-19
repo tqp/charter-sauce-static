@@ -1,0 +1,66 @@
+@media screen and (max-width: 320px) {
+	#sidebar {
+	  margin-top: 200px;
+	}
+	.header h1 {
+      font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+	#sidebar{ display:none;}
+	.content { margin-left:0px; width:99%  }
+	.container-full{ width:99% }
+    .content img { margin: auto; text-align: center; width: 99%}	
+	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	  display: block;
+	  height: auto;
+	  max-width: 100%;
+		  width:100%;  
+	}	
+.allsection {
+  padding: 150px 0 0;
+}	
+.header h1 {
+  padding: 10px 0;
+
+}
+.mobile_menus {
+  display: block;
+}
+
+.aside { 
+  position: absolute;
+}
+.aside:after{ clear:both; content:""; display:block;}
+#sidebar {
+  float: right;
+  margin-top: 92px;
+  position: relative;
+  right: 0;
+  width: 100%;
+  z-index: 888;
+}
+}
+@media (min-width: 769px) and (max-width: 979px){
+	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	  display: block;
+	  height: auto;
+	  max-width: 100%;
+	  width:100%;
+	}	
+.img-responsive.smallimage {
+  width: auto !important;
+}	
+}
+	
+@media (min-width: 980px) and (max-width: 1859px){
+	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	  display: block;
+	  height: auto;
+	  max-width: 100%;
+	  width:80% !important;
+	}	
+.img-responsive.smallimage {
+  width: auto !important;
+}	
+}

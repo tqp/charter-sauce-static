@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YachtResponsive multipage website template Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- FAVORITE AND APPLE TOUCH ICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/code.css">
+    <link rel="stylesheet" href="css/media.css">    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
+    <script type="text/javascript">
+	$(document).ready(function(e) {
+$(".mobile_menu_tab").click(function(){
+	$("#sidebar").slideToggle('100');
+	$('html, body').animate({
+		 scrollTop: $("#scrollplace").offset().top
+	}, 2000);
+	
+	});
+width = $(window).width();
+   if(width < 768)
+	{
+		$(".list-unstyled > li > a").click(function(){
+			$("#sidebar").fadeOut('slow');	
+	   });	
+	}
+   });
+    </script>
+</head> 
+<body>
+<!-- Sidebar -->
+<div class="page-wrap">
+<div class="header">
+             <h1> Yacht- Responsive multipage  Website Template - Documentation - V 1.0</h1>
+             <div class="mobile_menus"><img src="img/menu1.jpg" class="mobile_menu_tab default"></div>
+        	</div>
+    <div class="aside" id="sidebar">
+        <ul class="list-unstyled">
+            <li><a href="#scroll_overview">Overview</a></li>
+            <li><a href="#scroll_installingtheme">Main Structure</a></li>
+            <li><a href="#Charter_Gallery">Charter Gallery</a></li>
+            <li><a href="#scroll_importdemo">Edit Banner Image</a></li>
+            
+            
+            <li><a href="#scroll_map">Edit Map Location</a></li>
+            <li><a href="#scroll_mailchimp">CSS  (Cascading Style Sheets)</a></li>
+            <li><a href="#scroll_paypal">Fonts</a></li>
+            <li><a href="#scroll_pricing">Icons</a></li>
+            <li><a href="#scroll_footersetting">Credits</a></li>
+            <li><a href="#scroll_end">Support and Feedback</a></li>
+        </ul>                
+    </div>                
+</div>
+<!-- End Sidebar -->
+<div id="scrollplace"></div>
+<div class="content">
+    <div class="container-full">
+    <div class="row">        
+        <div class="col-lg-12">
+                
+                
+            <div id="scroll_overview" class="allsection">            
+                <h2>Overview</h2>
+                <hr />
+                <img src="img/01_preview.jpg" alt="" class="img-responsive smallimage">        
+              <p>Yacht website template is an  creative, clean and fully responsive template, built on 1170px Grid System of Twitter Bootstrap 3 along with SASS. Template comes with developer friendly and easy to customize code. Yachtis compatible with  all major web browsers, tablets and mobile devices.</p>
+              <p>We hope you will enjoy using our template. it's easy to navigate,  user-friendly  alongwith developer friendly code for any kind of customization or changes.</p>
+                <p><strong>We&nbsp;hope you will enjoy  using our theme.</strong></p>
+             <p>   </p><p>   </p>
+                 <p>Author: Ven Bradshaw</p>
+                 <p> Contact:  <a href="http://themeforest.net/user/venbradshaw#contact" target="_blank">contact form</a> or email to <a href="mailto:venbradshaw@gmail.com">venbradshaw@gmail.com</a></p>
+              <p>Created on: 15.04.2016</p>
+           
+            </div><!--/overview-->
+            <!--/installingtheme-->
+            <div id="scroll_installingtheme" class="allsection">
+                <h2>Main Structure</h2>
+                <hr />
+                <img src="img/structure.jpg" alt="">        
+            </div>
+            
+            <!-- Edit Testimonials -->
+            <div id="Charter_Gallery" class="allsection">
+                <h2>Charter Gallery</h2>
+                <hr />
+                <p>To change the images of Charter Galleryl you should place prepared photos <code>assets/images/</code> and replace path at following place. </p>
+                <img src="img/gallery.jpg" class="img-responsive" alt="">
+            </div>
+            <hr />
+            <!-- End Edit Slider Image -->
+
+            
+            
+            
+            
+            <!-- Edit Slider Image -->
+            <div id="scroll_importdemo" class="allsection">
+                <h2>Edit Slider Image</h2>
+                <hr />
+                <p>To change the image in background banner you should place prepared photos in <code>assets/images/</code> and replace path at following place. </p>
+                <img src="img/banner_img_guide.jpg" class="img-responsive" alt="">
+            </div>
+            <hr />
+            <!-- End Edit Slider Image -->
+
+            
+           
+            <!-- Edit Intro Map -->
+            <div id="scroll_map" class="allsection">
+                <h2>Edit Map Location</h2>
+                <hr /> 
+                <p>To change map location you should change latitude and longitude at <code>data-lati</code> and <code>data-long</code> respectively.</p>
+                <img src="img/map_img_guide.jpg" class="img-responsive" alt="">
+            </div>
+            <hr />
+            <!-- End Edit Intro Map -->
+    
+            <div class="clearfix"></div>
+            <!-- Start Mailchimp Setup-->
+            <div id="scroll_mailchimp" class="allsection">
+                <h2>CSS  (Cascading Style Sheets)</h2>
+                <hr />
+                <table cellspacing="1" cellpadding="1" border="0" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th><strong>Name</strong></th>
+                            <th><strong>Description</strong></th>
+                             
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bootstrap.min.css</td>      
+                            <td>The grid-system by Twitter Bootstrap v.3.3.4</td>
+                        </tr>
+                        <tr>
+                            <td>animate.css</td>      
+                            <td>Just-add-water CSS animations</td>
+                        </tr> 
+                        <tr>
+                            <td>reset.css</td>      
+                            <td>Reset stylesheet is to reduce browser inconsistencies in things</td>
+                        </tr> 
+                        <tr>
+                            <td>main.css</td>      
+                            <td>Additional file for adding custom styles to the template </td>
+                        </tr> 
+                        <tr>
+                            <td>font-awesome.min.css</td>      
+                            <td>Styles for "font-awesome" icons.</td>
+                        </tr>
+                        <tr>
+                            <td>owl.carousel</td>      
+                            <td>Styles for carousel.</td>
+                        </tr>
+                        <tr>
+                            <td>jquery-ui.css</td>      
+                            <td>Styles for to pick data.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr />
+            <div class="clearfix"></div>
+            <!-- End Mailchimp Setup-->
+            <!-- Start Paypal Setup-->
+            <div id="scroll_paypal" class="allsection">
+                <h2>Fonts</h2>
+                <hr />
+                <table class="table table-striped table-bordered">
+                        <tbody><tr>
+                            <th>Name</th>
+                            <th class="hidden-sm">Link</th>
+                        </tr> 
+                        <tr>
+                            <td>Roboto Slab</td>
+                            <td>
+                                <a href="https://fonts.googleapis.com/css?family=Roboto+Slab" data-target="_blank">https://fonts.googleapis.com/css?family=Roboto+Slab</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Raleway</td>
+                            <td>
+                                <a href="https://fonts.googleapis.com/css?family=Raleway" data-target="_blank">https://fonts.googleapis.com/css?family=Raleway</a>
+                            </td>
+                        </tr>
+                        
+                    </tbody></table> 
+			</div>
+            <hr />
+            <!-- End Paypal Setup-->
+            <div class="clearfix"></div>
+            <!-- Start Pricing Setup-->
+            <div id="scroll_pricing" class="allsection">
+                <h2>Icons</h2>
+                <hr />
+                <p><strong>1000+</strong> scalable vector icons available for you due to three premium icon fonts:</p>
+                
+                <table class="table table-striped table-bordered">
+                        <tbody>
+                        <tr>
+                            <td>Font Awesome</td>
+                            <td>
+                                <p>Font Awesome is&nbsp;a&nbsp;full suite of&nbsp;519 pictographic icons for easy scalable vector graphics on&nbsp;websites, created and maintained by&nbsp;Dave Gandy.</p>
+                                <p>Author: <a href="https://twitter.com/davegandy?lang=ru" data-target="_blank">Dave Gandy</a></p>
+                                <p>License: <a href="http://scripts.sil.org/OFL" data-target="_blank">SIL Open Font License 1.1</a></p>
+                                <p>Cheatsheet: <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" data-target="_blank">http://fortawesome.github.io/</a></p>
+                            </td>
+                        </tr>
+                    </tbody></table>
+
+                </div>
+
+            <!-- Start Credits-->
+            <div id="scroll_footersetting" class="allsection">
+                <h2>Credits</h2>
+                <br>
+                
+                <table cellspacing="1" cellpadding="1" border="0" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th><strong>Name</strong></th>
+                            <th><strong>Description</strong></th>
+                            <th><strong>URL</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>jQuery</td>
+                            <td class="hidden-sm">
+                                jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+                            </td>
+                            <td><a href="http://jquery.com" target="_blank">http://jquery.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery skrollr</td>
+                            <td class="hidden-sm">
+                                Skrollr is a lightweight jQuery plugin that is use for parallax scrolling website.
+                            </td>
+                            <td><a href="https://github.com/Prinzhorn/skrollr" target="_blank">https://github.com/Prinzhorn/skrollr</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>jQuery owl carousel</td>
+                            <td class="hidden-sm">
+                                Respsonsive jQuery for owl carousel.
+                            </td>
+                            <td><a href="https://github.com/OwlFonk/OwlCarousel" target="_blank">https://github.com/OwlFonk/OwlCarousel</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery WOW</td>
+                            <td class="hidden-sm">
+                                WOW.js is a JavaScript plugin that reveals animations when you scroll. Very Animate.css Friend.
+                            </td>
+                            <td><a href="https://github.com/matthieua/WOW" target="_blank">https://github.com/matthieua/WOW</a></td>
+                        </tr> 
+                         <tr>
+                            <td>jquery.ui.js</td>
+                            <td class="hidden-sm">
+                                 jquery.ui.js used for datapicker. 
+                            </td>
+                            <td><a href="https://jqueryui.com/datepicker/" target="_blank">https://jqueryui.com/datepicker/</a></td>
+                        </tr> 
+                         
+                         
+                        <tr>
+                            <td>custom.js</td>
+                            <td class="hidden-sm">
+                                 custom.js used for the custom events. 
+                            </td>
+                            <td><a href="assets/js/custom.min.js" target="_blank">custom.min.js</a></td>
+                        </tr> 
+                        <tr>
+                            <td>Responsive multimenu</td>
+                            <td class="hidden-sm">
+                                 The easiest way to develop responsive site with multi level navigation menu and user-friendly experience it has been optimized for mobile devices using HTML5, CSS3 and jQuery 
+                            </td>
+                            <td><a href="http://responsivemultimenu.com/" target="_blank">http://responsivemultimenu.com/</a></td>
+                        </tr>
+                        
+                         
+                    </tbody>
+                </table>
+            </div>
+            <hr />
+
+            </div>
+            <hr />
+            <!-- End Pricing Setup-->
+            <div class="clearfix"></div>
+            
+            
+            <!-- end Past Event Videos-->
+            
+                
+                
+            <!-- End Footer Setup-->
+           <div class="clearfix"></div>
+            <!-- Documentation -->            
+            <div id="scroll_end" class="allsection">
+                <h2>Support and Feedback</h2>
+                <hr />
+                <p>Our theme comes with free support and we have a dedicated support person to handle your requests. We may help you to do minor customizations and we appreciate if you have any feature request/suggestion, we always love to hear customer voice with pleasure.<p> </p>
+                
+                Once again, thank you for purchasing Eventcatch Theme. If you have any feedback or suggestions please let us know via <a href="http://themeforest.net/user/venbradshaw#contact" target="_blank">support form.</a>
+              <p> </p>
+              <strong>Thank you!</strong></p>
+            </div><!--/end-->
+            <!-- End of Documentation -->
+        </div><!--/content-->
+        
+    </div><!--/row-->
+</div><!--/container-->
+    <a href="javascript:void(0)" class="scroll_top"><i class="fa fa-angle-up"></i></a>
+</div>
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="plugins/smoothScroll.js"></script>
+    <script type="text/javascript" src="plugins/highlight.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=#scroll_]:not([href=#scroll_])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('.scroll_top').stop(true, true).fadeIn();
+            } else {
+                $('.scroll_top').stop(true, true).fadeOut();
+            }
+        });
+        $('.scroll_top').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+         });
+        hljs.configure({
+            classPrefix: '',
+            languages: ['html', 'javascript', 'css', 'php']
+        });
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!--[if lt IE 9]><script src="../assets/js/respond.js"></script><![endif]-->
+</body>
+</html> 

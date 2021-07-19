@@ -1,0 +1,117 @@
+/* * * Code * * */
+.b-code pre { padding: 1.5em 30px; margin: 1em 0; /*font: 400 .85em/1.5 'PT Mono', monospace;*/ word-break: break-all; word-wrap: break-word; color: #000; background: #fdf6e3; /*overflow-x: scroll;*/ -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.b-code pre { color: #fff; background: #272822; }
+
+.b-code pre a,
+.b-code pre a:focus,
+.b-code pre a:hover { color: inherit; text-decoration: underline; }
+
+.asciidoc .title,
+.label,
+.tag .title,
+.prompt,
+.http .request {
+    font-weight: bold;
+}
+
+.change,
+.code {
+    font-style: italic;
+}
+
+.title {
+    color: #a6de27;
+}
+
+.tag .title {
+    color: #e92772;
+}
+
+.id,
+.cbracket,
+.tag .value {
+    color: #d6db74;
+}
+
+.string,
+.bullet {
+    color: #decc69;
+}
+
+.type,
+.variable,
+.name,
+.actionscript .title,
+.aspectj .annotation,
+.aspectj .title,
+.change,
+.blockquote,
+.built_in {
+    color: #dc322f;
+}
+
+.attribute {
+    color: #a6e22d;
+}
+
+.number,
+.hexcolor,
+.link_label,
+.link_reference {
+    color: #ae81ff;
+}
+
+.keyword,
+.literal,
+.constant,
+.css .tag,
+.typename,
+.winutils {
+    color: #66d9ef;
+}
+
+.comment,
+.cdata,
+.preprocessor,
+.annotation,
+.decorator,
+.doctype,
+.deletion,
+.shebang,
+.apache .sqbracket,
+.tex .formula,
+.header,
+.horizontal_rule,
+.code {
+    color: #888;
+}
+
+.regexp,
+.attr_selector {
+    color: #decc69;
+}
+
+.important,
+.doctype,
+.pi,
+.chunk,
+.actionscript .type,
+.shebang,
+.pragma,
+.http .attribute {
+    color: #fc9b9b;
+}
+
+.deletion {
+    background-color: #fc9b9b;
+    color: #333;
+}
+
+.addition {
+    background-color: #a2fca2;
+    color: #333;
+}
+
+.params {
+    color: #f59720;
+}

@@ -1,0 +1,47 @@
+p {
+    margin: 5px 0 20px 0 !important;
+}
+
+li {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.col {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+dl {
+    margin-bottom: 0;
+    min-height: 22px;
+}
+
+.dl-b10 {
+    margin-bottom: 8px !important;
+}
+
+.dl-b10 dd {
+    font-weight: bold;
+}
+
+.tqp-nav-link {
+    color: #20A8D8;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.available {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.booked {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.calendar-container {
+    padding: 10px 30px;
+    border: 2px solid rgb(0, 61, 112);
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.01);
+}

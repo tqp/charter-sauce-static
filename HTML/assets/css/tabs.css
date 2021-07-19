@@ -1,0 +1,162 @@
+/* REQUIRED for core functionality */
+.responsive-tabs .y-product_listing > div {
+  background: none; }
+.responsive-tabs .y-yacht_intro {
+  background: #FFFFFF; }
+.responsive-tabs .y-tab_review > div.y-client_testimonials:first-child {
+  padding-top: 0; }
+  .responsive-tabs .y-tab_review > div.y-client_testimonials:first-child > img {
+    top: 2px; }
+.responsive-tabs .y-client_testimonials {
+  color: #464646;
+  padding: 15px 15px 15px 130px;
+  position: relative;
+  text-align: left; }
+  .responsive-tabs .y-client_testimonials > img {
+    left: 10px;
+    max-height: 100px;
+    position: absolute;
+    top: 22px; }
+  .responsive-tabs .y-client_testimonials p {
+    max-width: 100%;
+    margin: auto;
+    margin: 5px 0;
+    font-style: italic; }
+  .responsive-tabs .y-client_testimonials span em {
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 600; }
+.responsive-tabs .y-tab_review > div:nth-child(2n+2) {
+  background: #FFFFFF; }
+
+.responsive-tabs__heading {
+  display: none; }
+
+.responsive-tabs__list__item {
+  display: inline-block;
+  cursor: pointer;
+  position: relative; }
+
+.responsive-tabs__list__item--active:after {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 14px solid #003d70;
+  bottom: -12px;
+  content: "";
+  height: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 0; }
+
+@media (max-width: 767px) {
+  .responsive-tabs__list {
+    display: none; }
+
+  .responsive-tabs__heading {
+    display: block;
+    cursor: pointer; }
+
+  .responsive-tabs__panel--closed-accordion-only {
+    display: none; } }
+@media (min-width: 768px) {
+  .responsive-tabs__panel--closed-accordion-only {
+    display: block !important; } }
+/* END - Required for core functionality */
+/* OPTIONAL - Basic Skin */
+.responsive-tabs-wrapper {
+  clear: both;
+  zoom: 1; }
+
+.responsive-tabs-wrapper:before,
+.responsive-tabs-wrapper:after {
+  content: "";
+  display: table; }
+
+.responsive-tabs-wrapper:after {
+  clear: both; }
+
+.responsive-tabs__heading--active:focus,
+.responsive-tabs__list__item--active:focus {
+  outline: none !important; }
+
+.responsive-tabs__list {
+  background: #3aa6f5 none repeat scroll 0 0;
+  margin: 20px 0 0;
+  padding-left: 0; }
+  .responsive-tabs__list li {
+    width: 25%; }
+  .responsive-tabs__list img {
+    display: block;
+    margin: auto auto 10px; }
+  .responsive-tabs__list li:last-child {
+    border-right: none; }
+
+.responsive-tabs__list__item {
+  background: #3aa6f5 none repeat scroll 0 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-right: 1px solid #b8b8b8;
+  color: #ffffff;
+  width: 24.8%;
+  text-align: center;
+  padding: 25px 35px; }
+
+.responsive-tabs__list__item:hover {
+  background: #3aa6f5; }
+
+.responsive-tabs__list__item--active,
+.responsive-tabs__list__item--active:hover {
+  background: #003d70;
+  border-bottom-color: #003d70; }
+
+.responsive-tabs__panel {
+  margin-bottom: 50px;
+  padding: 40px 15px 15px; }
+  .responsive-tabs__panel h4 {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase; }
+
+@media (max-width: 767px) {
+  .responsive-tabs__heading {
+    background: #3aa6f5 none repeat scroll 0 0;
+    border-bottom: 3px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase; }
+
+  .responsive-tabs__heading > img {
+    margin-right: 10px; }
+
+  .responsive-tabs__heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #FFFFFF; }
+
+  .responsive-tabs__heading:hover,
+  .responsive-tabs__heading--active:hover {
+    background-color: #003d70; }
+
+  .responsive-tabs__heading--active {
+    background: #003d70; }
+
+  .responsive-tabs__heading--active:after {
+    border-bottom: 10px solid #3aa6f5;
+    border-top: 0; } }
+/* END - Optional - Basic Skin */
+
+/*# sourceMappingURL=tabs.css.map */
