@@ -31,6 +31,10 @@ dl {
     font-size: 14px;
 }
 
+td {
+    font-size: 14px;
+}
+
 .available {
     background-color: rgba(0, 255, 0, 0.5);
 }
@@ -44,4 +48,10 @@ dl {
     border: 2px solid rgb(0, 61, 112);
     margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.01);
+}
+
+@media (max-width: 767px) {
+    .y-menu_outer {
+        background: rgb(0, 46, 91);
+    }
 }
