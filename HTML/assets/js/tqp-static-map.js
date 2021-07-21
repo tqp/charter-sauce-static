@@ -163,12 +163,10 @@ function initMap() {
     }
 
     function assessMarkerVisibility(map) {
-        console.log('assessMarkerVisibility');
         if (map.getZoom() >= 10) {
             console.log('show');
             staniel_cay_airport.visible = true;
         } else {
-            console.log('hide');
             staniel_cay_airport.visible = false;
         }
     }
