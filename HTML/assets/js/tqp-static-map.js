@@ -13,11 +13,11 @@ function initMap() {
         console.log('{lat: ' + event.latLng.lat() + ', lng: ' + event.latLng.lng() + '},');
     });
 
-    const airport = "http://maps.google.com/mapfiles/kml/pal2/icon56.png";
-    const starCircle = "http://maps.google.com/mapfiles/kml/pal4/icon58.png";
-    const star = "http://maps.google.com/mapfiles/kml/pal4/icon59.png"
-    const square = "http://maps.google.com/mapfiles/kml/pal4/icon24.png";
-    const squareShadow = "http://maps.google.com/mapfiles/kml/pal4/icon27.png";
+    const airport = "https://maps.google.com/mapfiles/kml/pal2/icon56.png";
+    const starCircle = "https://maps.google.com/mapfiles/kml/pal4/icon58.png";
+    const star = "https://maps.google.com/mapfiles/kml/pal4/icon59.png"
+    const square = "https://maps.google.com/mapfiles/kml/pal4/icon24.png";
+    const squareShadow = "https://maps.google.com/mapfiles/kml/pal4/icon27.png";
     addMarker({lat: 24.172585875448874, lng: -76.44586961909374}, 'staniel_cay_yacht_club', map, starCircle);
     const staniel_cay_airport = addMarker({
         lat: 24.169426698959466,
