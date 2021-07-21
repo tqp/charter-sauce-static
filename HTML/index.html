@@ -77,6 +77,9 @@
                                             <a href="https://www.customyachtcharter.com/" target="_cyc">Custom Yacht
                                                 Charter</a>
                                         </li>
+                                        <li>
+                                            <a href="https://www.bahamas.com/" target="_blank">Bahamas.com</a>
+                                        </li>
                                         <!--
                                         <li>
                                           <a href="charter_listing.html">For Charter</a>
@@ -174,7 +177,8 @@
                                     <!-- Calendar -->
                                     <div class="calendar shadow bg-white p-5">
                                         <div class="d-flex align-items-center">
-                                            <h4 class="month font-weight-bold mb-0 text-uppercase">December 2021 to January 2022</h4>
+                                            <h4 class="month font-weight-bold mb-0 text-uppercase">December 2021 to
+                                                January 2022</h4>
                                         </div>
                                         <ol class="day-names list-unstyled">
                                             <li class="font-weight-bold text-uppercase">Sun</li>
@@ -255,7 +259,103 @@
                                     </div>
                                 </div>
 
+                                <div class="row" style="margin-bottom: 30px;">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <table class="table-condensed">
+                                            <tbody>
+                                            <tr class="">
+                                                <th>Points of Interest</th>
+                                                <th onclick="getLatLngZoom();">Description</th>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.57347223834123, -76.89728186648836, 9)">
+                                                    Overview
+                                                </td>
+                                                <td class="">Wide View of Cruise Track</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.169426698959466, -76.43908756583203, 15)">
+                                                    Staniel Cay Airport
+                                                </td>
+                                                <td class="">Arrival Airport</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.170488980600787, -76.45299956893388, 15)">
+                                                    Staniel Cay
+                                                </td>
+                                                <td class="">Board Boat / New Year's Eve</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.10108834621558, -76.40180633162996, 15)">
+                                                    Black Point
+                                                </td>
+                                                <td class="">Secluded Beach</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onclick="panToLocation(24.178741780237917, -76.44703736931876, 15)">
+                                                    Thunderball Grotto
+                                                </td>
+                                                <td class="">Underwater Cave System</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.18359784753267, -76.45657581206754, 15)">
+                                                    Pig Beach
+                                                </td>
+                                                <td class="">Swim with Pigs!</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.26142968261424, -76.51279127510846, 15)">
+                                                    Compass Cay
+                                                </td>
+                                                <td class="">Swimming with Sharks</td>
+                                            </tr>
 
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.394485774503366, -76.6351405667841, 15)">
+                                                    Shroud Cays
+                                                </td>
+                                                <td class="">Exuma Cays Sea Park</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(24.596145619822394, -76.82159504035788, 15)">
+                                                    Norman's Cay
+                                                </td>
+                                                <td class=""><span class="tqp-nav-link"
+                                                                   onClick="panToLocation(24.595686607199887, -76.82063528858778, 18)">MacDuff's</span>
+                                                    and <span class="tqp-nav-link"
+                                                              onClick="panToLocation(24.594400250645457, -76.80979859472569, 18)">Sunken Drug Plane</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(25.020868101894074, -77.27408835569118, 15)">
+                                                    Palm Cay Marina
+                                                </td>
+                                                <td class="">Disembark</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="tqp-nav-link"
+                                                    onClick="panToLocation(25.048874439547383, -77.46704318041039, 15)">
+                                                    Nassau Airport
+                                                </td>
+                                                <td class="">Departure Airport</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div id="map" class="y-map"></div>
+                                    </div>
+                                </div>
 
                                 <h4>Day 1 : Arrive on Staniel Cay</h4>
                                 <div class="row">
@@ -555,12 +655,6 @@
 
                             </div>
 
-                            <!--
-                            <div class="col-sm-12">
-                                <div id="map" class="y-map" data-latt="40.6700" data-long="-73.9400"></div>
-                            </div>
-                            -->
-
                         </div>
                     </div>
 
@@ -650,15 +744,31 @@
                     <h2><img src="assets/images/tab_04.png" alt="">Pricing and Availability</h2>
                     <div>
 
-                        <!--<h4>General information</h4>-->
+                        <h4>Pricing and Availability</h4>
                         <p>
+                            So, this year's trip is going to be a bit more expensive than previous years. I'm sorry
+                            about that. The pandemic increased prices all around. In addition, the Bahamas is typically
+                            more expensive than a lot of the islands we have sailed. Lastly, to make the trip much more
+                            enjoyable, Pete and I are going to pick up the boat in Nassau a day early and sail it the 10
+                            hours to Staniel Cay, where you'll all be arriving. That extra day is also incorporated into
+                            the price... but we believe it's a far better option than than spending the entire first two
+                            days of the trip at sail, trying to rush down to Staniel Cay for New Year's Eve.<br/>
+                            <br/>
+                            Now, that said, the cost of the trip gets you a week on a brand new $1.2 million dollar
+                            catamaran, sailing around the Bahamas, with an experienced captain, a fantastic group of
+                            people, with all on-boat expenses included. In addition, the cost of the flights to The
+                            Bahamas are currently almost half what they have been to some of our previous destinations
+                            in the Caribbean. Most importantly, we're doing an incredible amount of planning to make
+                            sure that this is going to be one hell of a trip. Hell, I'm organizing the trip and I'll be
+                            paying the same amount as you are... probably more, actually... and I can't wait!<br/>
+                            <br/>
                             <b>What’s Included?:</b><br/>
-                            The boat, the skipper, a shared 2-person cabin, or bunk; all on-board food, drink, and a
-                            well-stocked bar of wine, beer, and liquor; any permits, anchor/mooring fees, fuel, water,
-                            taxes, gratuities, linens, cleaning fees, snorkel equipment.<br/>
+                            The boat, the skipper, a shared 2-person cabin, or a single-person bunk bed; all on-board
+                            food, drink, and a well-stocked bar of wine, beer, and liquor; any permits, anchor/mooring
+                            fees, fuel, water, taxes, gratuities, linens, cleaning fees, snorkel equipment.<br/>
                             <br/>
                             <b>What’s Not Included?:</b><br/>
-                            Flights to/from St. Thomas, off-boat expenses (like bars, restaurants, etc.), hotel
+                            Flights to/from The Bahamas, off-boat expenses (like bars, restaurants, etc.), hotel
                             accommodations, private excursions.<br/>
                             <br/>
                             <b>How Do I Reserve My Spot?:</b><br/>
@@ -669,12 +779,16 @@
                             deck access to single-person bunk beds. Prices for cabins vary according to the size and
                             amenities. Unlike many sailboats, every cabin has its own head and shower.<br/>
                             <br/>
-                            It's assumed that the non-bunk cabins will accommodate two people, but on previous trips,
-                            people wanting a bit more space for themselves have booked the entire cabin for
-                            themselves. The two-person cabins must be booked as a whole, meaning, you can't book
-                            one of the places in a 2-person cabin without also booking the second spot at the same time.<br/>
+                            It's assumed that the cabins will accommodate two people. That said, people wanting a bit
+                            more space can book an entire cabin for themselves, but the price will still be as if two
+                            people were staying in that cabin. The two-person cabins must be booked as a whole, meaning,
+                            you can't book one of the spots in a 2-person cabin without having someone to book the
+                            second spot with you.<br/>
                             <br/>
-                            A 50% deposit will be required to reserve your cabin, and your spot on the trip.
+                            <b>A 50% deposit will be required to reserve your cabin, and your spot on the trip. Cabins
+                                will be available on a first-come, first-served basis.<br/>
+                                I'll update this website with the
+                                cabins still available.</b>
                         </p>
 
                         <div class="col-lg-6 col-sm-12">
@@ -687,37 +801,37 @@
                                 </tr>
                                 <tr class="">
                                     <td class="">Cabin A</td>
-                                    <td class="">$3400 x 2 Person</td>
+                                    <td class="">$3500 x 2 Person</td>
                                     <td class="available">Available</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Cabin B</td>
-                                    <td class="">$3400 x 2 Person</td>
+                                    <td class="">$3500 x 2 Person</td>
                                     <td class="available">Available</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Cabin C</td>
-                                    <td class="">$2800 x 2 Person</td>
+                                    <td class="">$3150 x 2 Person</td>
                                     <td class="available">Available</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Cabin D</td>
-                                    <td class="">$3000 x 2 Person</td>
+                                    <td class="">$3300 x 2 Person</td>
                                     <td class="booked" style="">Booked</td>
                                 </tr>
                                 <tr>
                                     <td class="">Cabin E</td>
-                                    <td class="">$3000 x 2 Person</td>
+                                    <td class="">$3300 x 2 Person</td>
                                     <td class="available">Available</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Top Bunk (F)</td>
-                                    <td class="">$2400</td>
+                                    <td class="">$2800</td>
                                     <td class="available">Available</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Bottom Bunk (G)</td>
-                                    <td class="">$2400</td>
+                                    <td class="">$2800</td>
                                     <td class="available">Available</td>
                                 </tr>
                                 </tbody>
@@ -730,7 +844,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col col-lg-6">
+                            <div class="col col-lg-6" style="margin-bottom: 20px;">
                                 <b>Cabins A & B:</b><br/>
                                 The two rear cabins (A & B) are the largest on the boat and have direct access to the
                                 aft deck through "Lamborghini-style" doors. Since the crew spends the majority of the
@@ -763,28 +877,56 @@
                     </div>
 
                     <h2><img src="assets/tqp-images/tab_05.png" alt="">Getting There</h2>
-                    <div>
+                    <div class="row">
                         <div class="col-lg-6 col-sm-12">
-                            Since we are doing a one-way sail, crew members should plan to fly into Staniel Cay Airport
-                            (TYM) and fly out of Nassau (NAS). Since Staniel Cay is a tiny little airport in the middle
-                            of nowhere, you're going to need to book a flight on one of the airlines that serves that
-                            airport.<br/>
-                            <br/>
-                            <a class="tqp-nav-link" href="https://makersair.com/" target="_blank">Makers Air</a> has
-                            daily flights into
-                            Staniel Cay Fort
-                            Lauderdale, Florida for around $350. <a class="tqp-nav-link"
-                                                                   href="https://booknow.flamingoairbah.com/"
-                                                                   target="_blank">Flamingo
-                            Air</a> has daily
-                            flights from Nassau to Staniel Cay for
-                            around $150. <a class="tqp-nav-link" href="https://weflytitanair.com/" target="_blank">Titan
-                            air</a> has the
-                            same flight from Nassau for around $115.
-
+                            <h4>Travel Planning</h4>
+                            <p>
+                                Since we are doing a one-way sail, crew members should plan to fly into Staniel Cay
+                                Airport
+                                (TYM) and fly out of Nassau (NAS). Since Staniel Cay is a tiny little airport in the
+                                middle
+                                of nowhere, you're going to need to book a flight on one of the airlines that serves
+                                that
+                                airport.<br/>
+                                <br/>
+                                <a class="tqp-nav-link" href="https://makersair.com/" target="_blank">Makers Air</a>
+                                has
+                                daily flights into
+                                Staniel Cay Fort
+                                Lauderdale, Florida for around $350. <a class="tqp-nav-link"
+                                                                        href="https://booknow.flamingoairbah.com/"
+                                                                        target="_blank">Flamingo
+                                Air</a> has daily
+                                flights from Nassau to Staniel Cay for
+                                around $150. <a class="tqp-nav-link" href="https://weflytitanair.com/"
+                                                target="_blank">Titan
+                                air</a> has the
+                                same flight from Nassau for around $115.
+                            </p>
+                            <h4>Covid Considerations</h4>
+                            <p>
+                                The global pandemic is, sadly, far from over. Even as I write this, states are
+                                reassessing their mask policies and countries are considering travel restrictions.<br/>
+                                <br/>
+                                From a charter standpoint, while we fully expect this trip to take place, the group we
+                                are renting the boat from will allow us to reschedule our trip if pandemic-related
+                                events out of our control, like a country lock-down or altered entry requirements
+                                prevent us from being able to enter The Bahamas. They are not offering a refund.<br/>
+                                <br/>
+                                From a country standpoint, while requirements are subject to change, "effective May 1,
+                                2021, visitors travelling to The Bahamas from other countries who are fully vaccinated
+                                and have passed the two-week immunity period will be exempted from COVID-19 testing
+                                requirements for entry and inter-island travel."<br/>
+                                <br/>
+                                Given the close proximity what we'll be living in together for a week on the boat, we
+                                would hope that anyone joining us on this trip would be considerate enough to be
+                                vaccinated. That said, every crew member should review the information available on <a
+                                    class="tqp-nav-link" href="https://www.bahamas.com/travelupdates" target="_blank">bahamas.com</a>
+                                to assess their own health situation.
+                            </p>
                         </div>
 
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="row col-lg-6 col-sm-12">
                             Flight Prices as of July 2021:
                             <table class="table-condensed">
                                 <tbody>
@@ -795,42 +937,53 @@
                                 </tr>
                                 <tr class="">
                                     <td class="">American</td>
-                                    <td class="">DCA-NAS</td>
+                                    <td class="">DCA-NAS (Round Trip)</td>
                                     <td class="">$350</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Delta</td>
-                                    <td class="">DCA-NAS</td>
+                                    <td class="">DCA-NAS (Round Trip)</td>
                                     <td class="">$450</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">American</td>
-                                    <td class="">DCA-FLL/NAS-DCA</td>
+                                    <td class="">DCA-FLL / NAS-DCA</td>
                                     <td class="">$350</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Delta</td>
-                                    <td class="">DCA-FLL/NAS-DCA</td>
+                                    <td class="">DCA-FLL / NAS-DCA</td>
                                     <td class="">$415</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Makers Air</td>
-                                    <td class="">FLL-TYM</td>
+                                    <td class="">FLL-TYM (One Way)</td>
                                     <td class="">$358</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Flamingo Air</td>
-                                    <td class="">NAS-TYM</td>
+                                    <td class="">NAS-TYM (One Way)</td>
                                     <td class="">$152</td>
                                 </tr>
                                 <tr class="">
                                     <td class="">Titan Air</td>
-                                    <td class="">NAS-TYM</td>
+                                    <td class="">NAS-TYM (One Way)</td>
                                     <td class="">$116</td>
                                 </tr>
                                 </tbody>
                             </table>
+
+                            <img src="assets/tqp-images/staniel_cay_airport_2.png"
+                                 style="width: 100%; object-fit: cover" alt="">
                         </div>
+
+                        <!--
+                        <div class="col-lg-6 col-sm-12">
+                            <img src="assets/tqp-images/staniel_cay_airport_1.jpg" style="width: 100%; object-fit: cover" alt="">
+                        </div>
+                        -->
+
+
                     </div>
 
 
@@ -841,20 +994,28 @@
                     <div class="container">
                         <div class="col-lg-12">
                             <div class="camera_wrap camera_emboss" id="camera_wrap_3">
-                                <div data-thumb="assets/tqp-images/slideshow/staniel_cay_sm.png"
-                                     data-src="assets/tqp-images/slideshow/staniel_cay_bg.png"></div>
-                                <div data-thumb="assets/tqp-images/slideshow/pig_beach_2_sm.png"
-                                     data-src="assets/tqp-images/slideshow/pig_beach_2_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/staniel_cay_1_sm.png"
+                                     data-src="assets/tqp-images/slideshow/staniel_cay_1_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/staniel_cay_2_sm.png"
+                                     data-src="assets/tqp-images/slideshow/staniel_cay_2_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/staniel_cay_3_sm.png"
+                                     data-src="assets/tqp-images/slideshow/staniel_cay_3_bg.png"></div>
                                 <div data-thumb="assets/tqp-images/slideshow/pig_beach_1_sm.png"
                                      data-src="assets/tqp-images/slideshow/pig_beach_1_bg.png"></div>
-                                <div data-thumb="assets/tqp-images/slideshow/thunderball2_sm.png"
-                                     data-src="assets/tqp-images/slideshow/thunderball3_bg.png"></div>
-                                <div data-thumb="assets/tqp-images/slideshow/thunderball1_sm.png"
-                                     data-src="assets/tqp-images/slideshow/thunderball1_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/pig_beach_2_sm.png"
+                                     data-src="assets/tqp-images/slideshow/pig_beach_2_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/thunderball_2_sm.png"
+                                     data-src="assets/tqp-images/slideshow/thunderball_2_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/thunderball_1_sm.png"
+                                     data-src="assets/tqp-images/slideshow/thunderball_1_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/compass_cay_1_sm.jpg"
+                                     data-src="assets/tqp-images/slideshow/compass_cay_1_bg.jpg"></div>
                                 <div data-thumb="assets/tqp-images/slideshow/compass_cay_2_sm.png"
                                      data-src="assets/tqp-images/slideshow/compass_cay_2_bg.png"></div>
-                                <div data-thumb="assets/tqp-images/slideshow/compass_cay_sm.jpg"
-                                     data-src="assets/tqp-images/slideshow/compass_cay_bg.jpg"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/exuma_1_sm.png"
+                                     data-src="assets/tqp-images/slideshow/exuma_1_bg.png"></div>
+                                <div data-thumb="assets/tqp-images/slideshow/drug_plane_1_sm.png"
+                                     data-src="assets/tqp-images/slideshow/drug_plane_1_bg.png"></div>
                             </div>
                         </div>
                     </div>
@@ -942,7 +1103,7 @@
     </div>
     <div class="y-line"></div>
     <div class="y-loading" id="y-loading">
-        <img src="assets/images/loading.gif" alt="">
+        <img src="assets/tqp-images/loading.gif" alt="">
     </div>
 </div>
 <!-- JQUERY:: JQUERY.MIN.JS -->
@@ -964,8 +1125,11 @@
 <script type='text/javascript' src='assets/js/camera.min.js'></script>
 
 <!-- JQUERY:: MAP.JS-->
-<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
-<script type="text/javascript" src="assets/js/map.js"></script>
+<!--<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>-->
+<script src="assets/js/tqp-static-map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTTs_TURvNdefPD7HbkxPt52mePExa-kA&callback=initMap&libraries=&v=weekly">
+</script>
 <!-- RESPONSIVE_TABS:: RESPONSIVE_TABS.JS -->
 <script type="text/javascript" src="assets/js/responsiveTabs.js"></script>
 <!-- CUSTOM:: CUSTOM.JS -->
