@@ -7,6 +7,21 @@ li {
     line-height: 22px;
 }
 
+.header .crew-login-container {
+    position: absolute;
+    right: 20px;
+    top: 10px
+}
+
+.header .crew-login {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
 .col {
     font-size: 14px;
     font-weight: normal;
